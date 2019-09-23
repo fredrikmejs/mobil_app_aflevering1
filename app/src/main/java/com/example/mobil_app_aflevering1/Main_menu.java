@@ -18,8 +18,6 @@ public class Main_menu extends AppCompatActivity implements OnClickListener{
 
 Button button_web, button_number;
 
-
-
     @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,7 +44,7 @@ Button button_web, button_number;
         if (v == button_number){
             int num = (int)(Math.random()*6+1);
 
-            button_number.setText("You clicked on me \n rolled " +num  );
+            button_number.setText("You clicked on me \n and rolled " +num  );
         }
     }
 }
