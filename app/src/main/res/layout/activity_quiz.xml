@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".quiz">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="42dp"
+        android:text="Time for Quiz"
+        android:textColorLink="#00B31717"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/button_goBackQuiz"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_goBackQuiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="Go back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_question"
+        android:layout_width="223dp"
+        android:layout_height="87dp"
+        android:layout_marginStart="44dp"
+        android:text="What is the sum of the following x= 5 y = 6  z= x*y"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/text_correct"
+        app:layout_constraintStart_toStartOf="@+id/text_correct"
+        app:layout_constraintTop_toTopOf="@+id/text_correct" />
+
+    <Button
+        android:id="@+id/button_wrong1"
+        android:layout_width="132dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="32dp"
+        android:text="25"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button_correct"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_correct"
+        android:layout_width="0dp"
+        android:layout_height="87dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginBottom="249dp"
+        android:text="30"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/button_wrong3"
+        app:layout_constraintStart_toStartOf="@+id/button_wrong3"
+        app:layout_constraintTop_toTopOf="@+id/text_question" />
+
+    <Button
+        android:id="@+id/button_wrong2"
+        android:layout_width="136dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:text="31"
+        app:layout_constraintBottom_toBottomOf="@+id/button_wrong3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button_wrong3" />
+
+    <Button
+        android:id="@+id/button_wrong3"
+        android:layout_width="129dp"
+        android:layout_height="84dp"
+        android:layout_marginEnd="53dp"
+        android:layout_marginBottom="78dp"
+        android:text="20"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/text_wrong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="108dp"
+        android:background="#002ECC29"
+        android:text="Your answer 30 is Correct, good job! "
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/button_wrong1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/text_correct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="128dp"
+        android:text="Your answer is correct, good job!"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

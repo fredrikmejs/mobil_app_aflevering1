@@ -12,7 +12,7 @@ import android.widget.EditText;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Webpage extends AppCompatActivity implements View.OnClickListener {
-    Button button_goBack, button_goToURL;
+    private Button button_goBack, button_goToURL;
     private WebView webView;
 
 

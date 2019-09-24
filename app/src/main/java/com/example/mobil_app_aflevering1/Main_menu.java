@@ -16,7 +16,7 @@ import android.widget.TextView;
 
 public class Main_menu extends AppCompatActivity implements OnClickListener{
 
-Button button_web, button_number;
+private Button button_web, button_number, button_quiz, button_lazy;
 
     @SuppressLint("SetTextI18n")
     @Override
@@ -24,12 +24,18 @@ Button button_web, button_number;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_menu);
 
+    button_lazy = findViewById(R.id.button_doNoting);
+    button_lazy.setOnClickListener(this);
+
     button_number = findViewById(R.id.aktivitet_2);
     button_number.setText("click on me");
     button_number.setOnClickListener(this);
 
     button_web = findViewById(R.id.aktivitet_1);
     button_web.setOnClickListener(this);
+
+    button_quiz = findViewById(R.id.button_quiz);
+    button_quiz.setOnClickListener(this);
 }
 
     @SuppressLint("SetTextI18n")
@@ -43,8 +49,16 @@ Button button_web, button_number;
 
         if (v == button_number){
             int num = (int)(Math.random()*6+1);
-
             button_number.setText("You clicked on me \n and rolled " +num  );
+        }
+
+        if (v == button_quiz){
+            Intent myIntent = new Intent(v.getContext(), quiz.class);
+            startActivityForResult(myIntent, 0);
+        }
+
+        if(v == button_lazy){
+            button_lazy.setText("I don't do anything");
         }
     }
 }
