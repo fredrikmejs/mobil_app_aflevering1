@@ -10,7 +10,7 @@
         android:id="@+id/Hovedmenu_tekst"
         android:layout_width="149dp"
         android:layout_height="44dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="28dp"
         android:text="Hovedmenu"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -25,34 +25,39 @@
         android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Hovedmenu_tekst"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_bias="0.058"
         app:srcCompat="@mipmap/ic_launcher" />
 
     <Button
         android:id="@+id/aktivitet_1"
-        android:layout_width="0dp"
-        android:layout_height="65dp"
+        android:layout_width="110dp"
+        android:layout_height="83dp"
         android:layout_marginStart="60dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="65dp"
         android:layout_marginBottom="56dp"
         android:text="web browser"
         app:layout_constraintBottom_toTopOf="@+id/button_doNoting"
         app:layout_constraintEnd_toStartOf="@+id/aktivitet_2"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/aktivitet_2"
-        android:layout_width="0dp"
-        android:layout_height="64dp"
+        android:layout_width="131dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="62dp"
         android:layout_marginBottom="56dp"
         android:text="click on me"
         app:layout_constraintBottom_toTopOf="@+id/button_quiz"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/aktivitet_1" />
+        app:layout_constraintStart_toEndOf="@+id/aktivitet_1"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/button_quiz"
@@ -64,7 +69,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/button_doNoting"
-        app:layout_constraintTop_toTopOf="@+id/button_doNoting" />
+        app:layout_constraintTop_toTopOf="@+id/button_doNoting"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/button_doNoting"
@@ -72,7 +78,7 @@
         android:layout_height="62dp"
         android:layout_marginStart="62dp"
         android:layout_marginEnd="59dp"
-        android:layout_marginBottom="119dp"
+        android:layout_marginBottom="92dp"
         android:text="im feeling lazy"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/button_quiz"

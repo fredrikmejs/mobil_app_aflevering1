@@ -49,7 +49,7 @@ private Button button_web, button_number, button_quiz, button_lazy;
 
         if (v == button_number){
             int num = (int)(Math.random()*6+1);
-            button_number.setText("You clicked on me \n and rolled " +num  );
+            button_number.setText("You clicked on me and rolled " + num  );
         }
 
         if (v == button_quiz){
